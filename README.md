@@ -105,28 +105,27 @@ Notebook 将自动下载 eegmmidb 数据集、训练模型并展示结果。
 - 增加 **受试者自适应微调** 功能，减少校准时间
 
 ---
-
 ## Project Structure
 
-├── EEG_Conformer_eegmmidb.ipynb # Main Colab notebook
-├── models/
-│ └── eeg_conformer.py # Model definition
-├── utils/
-│ ├── data_loader.py # Data loading and preprocessing
-│ └── augmentation.py # interaug implementation
-├── requirements.txt
-└── README.md
+- EEG_Conformer_eegmmidb.ipynb   # Main Colab notebook
+- models/
+  - eeg_conformer.py             # Model definition
+- utils/
+  - data_loader.py               # Data loading and preprocessing
+  - augmentation.py              # interaug implementation
+- requirements.txt
+- README.md
 
 ## 项目结构
 
-├── EEG_Conformer_eegmmidb.ipynb # 主 Colab Notebook
-├── models/
-│ └── eeg_conformer.py # 模型定义
-├── utils/
-│ ├── data_loader.py # 数据加载与预处理
-│ └── augmentation.py # interaug 数据增强实现
-├── requirements.txt
-└── README.md
+- EEG_Conformer_eegmmidb.ipynb   # 主 Colab Notebook
+- models/
+  - eeg_conformer.py             # 模型定义
+- utils/
+  - data_loader.py               # 数据加载与预处理
+  - augmentation.py              # interaug 数据增强实现
+- requirements.txt
+- README.md
 
 ---
 

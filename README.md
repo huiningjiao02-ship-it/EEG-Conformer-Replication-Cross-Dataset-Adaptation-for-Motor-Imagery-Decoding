@@ -107,7 +107,7 @@ Notebook 将自动下载 eegmmidb 数据集、训练模型并展示结果。
 ---
 
 ## Project Structure
-.
+
 ├── EEG_Conformer_eegmmidb.ipynb # Main Colab notebook
 ├── models/
 │ └── eeg_conformer.py # Model definition

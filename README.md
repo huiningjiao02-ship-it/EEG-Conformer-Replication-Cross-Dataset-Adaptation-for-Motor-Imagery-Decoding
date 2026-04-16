@@ -1,10 +1,6 @@
 # EEG-Conformer for Motor Imagery on PhysioNet eegmmidb
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_5OjmRb-AIt7KSR5zOXs8lNSYDNrqqce)
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-1.13%2B-orange?logo=pytorch)](https://pytorch.org/)
-[![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
-[![Last Commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/YOUR_REPO_NAME?color=blue)](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME)
 
 > **English** | [中文说明](#-中文说明)
 

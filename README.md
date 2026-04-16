@@ -1,38 +1,44 @@
-# EEG Conformer for Motor Imagery on PhysioNet eegmmidb
+# EEG-Conformer for Motor Imagery on PhysioNet eegmmidb
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/你的用户名/仓库名/blob/main/EEG_Conformer_eegmmidb.ipynb)
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-1.13%2B-orange)](https://pytorch.org/)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1_5OjmRb-AIt7KSR5zOXs8lNSYDNrqqce)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-1.13%2B-orange?logo=pytorch)](https://pytorch.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/YOUR_REPO_NAME?color=blue)](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME)
 
-> **English** | [中文说明](#chinese-version)
+> **English** | [中文说明](#-中文说明)
 
-A clean, one-click reproduction of the **EEG Conformer** architecture (Song et al., 2023) on the **PhysioNet EEG Motor Movement/Imagery Dataset (eegmmidb)**.  
-Modified to support **64‑channel** input and runs entirely in **Google Colab** with automatic data download.
+本项目是对 **EEG-Conformer** 架构 (Song et al., 2023) 的完整复现，在 **PhysioNet EEG Motor Movement/Imagery Dataset (eegmmidb)** 数据集上进行了适配和验证。项目已修改为支持 **64 通道输入**，并在 **Google Colab** 中提供一键运行的环境，包含自动数据下载功能。
 
 ---
 
-## ✨ Highlights
+## ✨ 项目亮点
 
-| Feature | Description |
+| 特性 | 说明 |
 | :--- | :--- |
-| 🧠 **64‑Channel Support** | Extended the original 22‑ch model to handle 64‑channel EEG signals. |
-| 📦 **Zero Manual Setup** | Dataset is downloaded automatically via `mne.datasets`. |
-| 🔄 **Paper Augmentation** | Re‑implements the `interaug` data augmentation strategy from the paper. |
-| ☁️ **Colab Ready** | Click the badge above to run everything in the cloud—no local GPU needed. |
-| ⚙️ **Flexible Config** | Easily adjust the number of subjects, epochs, and batch size. |
+| 🧠 **64 通道支持** | 将原始 22 通道模型扩展，以处理 64 通道的 EEG 信号。 |
+| 📦 **零手动配置** | 通过 `mne.datasets` 自动下载数据集，无需手动下载和配置。 |
+| 🔄 **论文数据增强** | 完整复用了原论文的 `interaug` 数据增强策略。 |
+| ☁️ **Colab 一键运行** | 点击上方的徽章即可在云端运行，无需本地 GPU 环境。 |
+| ⚙️ **灵活配置** | 可轻松调整受试者数量、训练轮数 (epochs) 和批次大小 (batch size)。 |
 
 ---
 
-## 🚀 Quick Start
+## 🚀 快速开始
 
-### Run in Google Colab (Recommended)
+### 在 Google Colab 中运行 (推荐)
 
-1. Click the **Open in Colab** badge above.
-2. Go to `Runtime` → `Change runtime type` → Select **GPU**.
-3. Run all cells (`Runtime` → `Run all`).
+1.  点击上方的 **Open In Colab** 徽章。
+2.  在 Colab 中，点击 `Runtime` → `Change runtime type`，选择 **T4 GPU** 作为硬件加速器。
+3.  顺序运行所有单元格 (`Runtime` → `Run all`)。
 
-That's it! The notebook will download the eegmmidb dataset, train the model, and display results.
+代码将自动下载数据集、训练模型并展示结果。
 
-### Run Locally
+### 本地运行
+
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+cd YOUR_REPO_NAME
+pip install -r requirements.txt
+jupyter notebook EEG_Conformer_eegmmidb.ipynb
 

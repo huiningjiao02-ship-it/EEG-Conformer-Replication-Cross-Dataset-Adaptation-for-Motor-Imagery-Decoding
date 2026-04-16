@@ -1,3 +1,59 @@
+# EEG Conformer for Motor Imagery on PhysioNet eegmmidb
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/你的用户名/仓库名/blob/main/EEG_Conformer_eegmmidb.ipynb)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-1.13%2B-orange)](https://pytorch.org/)
+[![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
+
+> **English** | [中文说明](#chinese-version)
+
+A clean, one-click reproduction of the **EEG Conformer** architecture (Song et al., 2023) on the **PhysioNet EEG Motor Movement/Imagery Dataset (eegmmidb)**.  
+Modified to support **64‑channel** input and runs entirely in **Google Colab** with automatic data download.
+
+---
+
+## 📑 Table of Contents
+
+- [Highlights](#-highlights)
+- [Quick Start](#-quick-start)
+- [Model Adaptations](#-model-adaptations)
+- [Results on eegmmidb](#-results-on-eegmmidb)
+- [Comparison with Original Paper](#-comparison-with-original-paper)
+- [Repository Structure](#-repository-structure)
+- [Citation](#-citation)
+- [Chinese Version | 中文说明](#chinese-version)
+
+---
+
+## ✨ Highlights
+
+| Feature | Description |
+| :--- | :--- |
+| 🧠 **64‑Channel Support** | Extended the original 22‑ch model to handle 64‑channel EEG signals. |
+| 📦 **Zero Manual Setup** | Dataset is downloaded automatically via `mne.datasets`. |
+| 🔄 **Paper Augmentation** | Re‑implements the `interaug` data augmentation strategy from the paper. |
+| ☁️ **Colab Ready** | Click the badge above to run everything in the cloud—no local GPU needed. |
+| ⚙️ **Flexible Config** | Easily adjust the number of subjects, epochs, and batch size. |
+
+---
+
+## 🚀 Quick Start
+
+### Run in Google Colab (Recommended)
+
+1. Click the **Open in Colab** badge above.
+2. Go to `Runtime` → `Change runtime type` → Select **GPU**.
+3. Run all cells (`Runtime` → `Run all`).
+
+That's it! The notebook will download the eegmmidb dataset, train the model, and display results.
+
+### Run Locally
+
+```bash
+git clone https://github.com/你的用户名/仓库名.git
+cd 仓库名
+pip install -r requirements.txt
+jupyter notebook EEG_Conformer_eegmmidb.ipynb
 # EEG-Conformer-Replication-Cross-Dataset-Adaptation-for-Motor-Imagery-Decoding
 📌 Introduction | 项目介绍
 This project implements the EEG Conformer architecture (Song et al., 2023) for EEG motor imagery decoding, adapted specifically for the PhysioNet EEG Motor Movement/Imagery Dataset (eegmmidb).

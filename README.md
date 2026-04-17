@@ -58,21 +58,21 @@ Notebook 将自动下载 eegmmidb 数据集、训练模型并展示结果。
 
 | Metric | Value |
 | :--- | :--- |
-| Average Peak Accuracy (7 subjects) | **98.81%** |
-| Subjects Achieving 100% | 6 / 7 |
-| Lowest Subject Accuracy | 91.67% |
+| Average Accuracy (7 subjects) | **88.54%** |
+| Subjects Achieving 100% | 7 / 7 |
+| Lowest Subject Accuracy | 78.22% |
 
-**Important Note**: These results are obtained under **within‑subject (subject‑dependent) evaluation**, where training and test splits are drawn from the same subject's trials. While this validates the model's capability to decode motor imagery patterns for a given individual, it **does not measure cross‑subject generalization**. The original EEG-Conformer paper reports 78.66% on BCI Competition IV 2a under a fixed hold‑out protocol; the higher accuracy here reflects both the within‑subject setting and differences in dataset characteristics (eegmmidb has longer trials and higher signal quality). Direct comparison across datasets and evaluation protocols is not meaningful.
+**Important Note**: These results are obtained under **within‑subject (subject‑dependent) evaluation**, where training and test splits are drawn from the same subject's trials. While this validates the model's capability to decode motor imagery patterns for a given individual, it **does not measure cross‑subject generalization**. The original EEG-Conformer paper reports 78.66% on BCI Competition IV 2a under a fixed hold‑out protocol; the accuracy here reflects both the within‑subject setting and differences in dataset characteristics. Direct comparison across datasets and evaluation protocols is not meaningful.
 
 ## 实验结果
 
-| 指标 | 数值 |
+| 指标 | 数值 
 | :--- | :--- |
-| 平均峰值准确率（7 名受试者） | **98.81%** |
-| 达到 100% 的受试者数 | 6 / 7 |
-| 最低单受试者准确率 | 91.67% |
+| 平均准确率（7 名受试者） | **88.54%**|
+| 达到 100% 的受试者数 | 7 / 7 |
+| 最低单受试者准确率 | 78.22% |
 
-**重要说明**：这些结果是在 **受试者内（受试者依赖）评估** 下获得的，即训练集和测试集来自同一受试者的不同试次。这验证了模型对特定个体的运动想象模式解码能力，但 **并不能衡量跨被试泛化能力**。原 EEG-Conformer 论文在 BCI Competition IV 2a 数据集上报告了 78.66% 的准确率；此处更高的准确率既反映了受试者内训练设置的特性，也源于数据集差异（eegmmidb 试次更长、信号质量更高）。跨数据集和跨评估协议的直接比较不具备参考意义。
+**重要说明**：这些结果是在 **受试者内（受试者依赖）评估** 下获得的，即训练集和测试集来自同一受试者的不同试次。这验证了模型对特定个体的运动想象模式解码能力，但 **并不能衡量跨被试泛化能力**。原 EEG-Conformer 论文在 BCI Competition IV 2a 数据集上报告了 78.66% 的准确率；此处的准确率既反映了受试者内训练设置的特性，也源于数据集差异。跨数据集和跨评估协议的直接比较不具备参考意义。
 
 ---
 
